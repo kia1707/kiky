@@ -1,0 +1,507 @@
+css
+/* =====================================================
+   LILAC VINTAGE FEMININE
+   Elegant • Soft • Vintage • Aesthetic
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+
+/* =====================================================
+   1. RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    color: #554957;
+
+    background-color: #f8f3f8;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   2. HERO
+===================================================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(247, 239, 249, 0.88),
+            rgba(247, 239, 249, 0.88)
+        ),
+        #e6d8e9;
+
+    position: relative;
+}
+
+
+/* garis dekorasi vintage */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    top: 35px;
+    left: 5%;
+
+    width: 90%;
+
+    height: calc(100% - 70px);
+
+    border: 1px solid #b9a1bb;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   3. HERO CONTENT
+===================================================== */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 720px;
+
+    padding: 45px 40px;
+
+    background: #fbf8f9;
+
+    border: 1px solid #c8b3ca;
+
+    box-shadow:
+        8px 8px 0 rgba(158, 127, 163, 0.15);
+}
+
+
+/* =====================================================
+   4. PROFILE PHOTO
+===================================================== */
+
+.profile-img {
+    width: 175px;
+    height: 210px;
+
+    object-fit: cover;
+
+    border-radius: 45% 45% 42% 42%;
+
+    border: 8px solid #ffffff;
+
+    outline: 1px solid #b79bb9;
+
+    box-shadow:
+        0 8px 20px rgba(94, 70, 98, 0.15);
+
+    margin-bottom: 25px;
+
+    filter: saturate(0.85);
+}
+
+
+/* =====================================================
+   5. HERO TITLE
+===================================================== */
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 46px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #57465b;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #806286;
+
+    font-style: italic;
+
+    font-size: 52px;
+}
+
+
+/* =====================================================
+   6. HERO DESCRIPTION
+===================================================== */
+
+.hero p {
+    max-width: 570px;
+
+    margin: 0 auto 25px;
+
+    color: #766b78;
+
+    font-size: 14px;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =====================================================
+   7. BUTTON
+===================================================== */
+
+.btn {
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    background: #806286;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: 1px solid #6f5475;
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #69506e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   8. GENERAL SECTION
+===================================================== */
+
+.about,
+.portfolio {
+    padding: 90px 8%;
+}
+
+
+/* =====================================================
+   9. SECTION TITLE
+===================================================== */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 38px;
+
+    font-weight: 600;
+
+    color: #59485e;
+
+    letter-spacing: 1px;
+}
+
+
+/* garis vintage */
+
+.line {
+    width: 80px;
+    height: 1px;
+
+    background: #9b809f;
+
+    margin: 12px auto;
+
+    position: relative;
+}
+
+.line::before,
+.line::after {
+    content: "✦";
+
+    position: absolute;
+
+    top: -9px;
+
+    color: #9b809f;
+
+    font-size: 12px;
+}
+
+.line::before {
+    left: -17px;
+}
+
+.line::after {
+    right: -17px;
+}
+
+
+/* =====================================================
+   10. ABOUT
+===================================================== */
+
+.about {
+    background-color: #fffdfd;
+
+    text-align: center;
+}
+
+.about > p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #716673;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   11. PORTFOLIO
+===================================================== */
+
+.portfolio {
+    background-color: #eee5f0;
+
+    border-top: 1px solid #d5c5d8;
+
+    border-bottom: 1px solid #d5c5d8;
+}
+
+.portfolio-container {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =====================================================
+   12. CARD
+===================================================== */
+
+.card {
+    padding: 35px 28px;
+
+    background-color: #fbf8fa;
+
+    border: 1px solid #cdb8cf;
+
+    text-align: center;
+
+    box-shadow:
+        6px 6px 0 rgba(135, 106, 140, 0.10);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        8px 10px 0 rgba(135, 106, 140, 0.14);
+}
+
+
+/* =====================================================
+   13. CARD ICON
+===================================================== */
+
+.card-icon {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8dce9;
+
+    border: 1px solid #c5adc7;
+
+    color: #76577c;
+
+    font-size: 24px;
+}
+
+
+/* =====================================================
+   14. CARD TITLE
+===================================================== */
+
+.card h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 26px;
+
+    font-weight: 600;
+
+    color: #5d4961;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   15. CARD DESCRIPTION
+===================================================== */
+
+.card p {
+    color: #756a77;
+
+    font-size: 13px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   16. CARD BUTTON
+===================================================== */
+
+.card-btn {
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    border: 1px solid #9f82a4;
+
+    color: #76577c;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 0.4px;
+
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #806286;
+
+    color: white;
+}
+
+
+/* =====================================================
+   17. FOOTER
+===================================================== */
+
+footer {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background-color: #57465b;
+
+    color: #eee5ef;
+
+    font-size: 12px;
+
+    letter-spacing: 0.3px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #d9c6dc;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   18. RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+
+        padding: 60px 20px;
+    }
+
+    .hero::before {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 40px 25px;
+    }
+
+    .profile-img {
+        width: 145px;
+        height: 175px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h1 span {
+        font-size: 40px;
+    }
+
+    .about,
+    .portfolio {
+        padding: 65px 20px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
